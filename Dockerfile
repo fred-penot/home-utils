@@ -6,7 +6,8 @@
 FROM     fwed/nodejs-base-project
 MAINTAINER Fwedoz "fwedoz@gmail.com"
 
-# Depots, mises a jour et installs
+# Definition des constantes
+ENV login_ssh="docker"
 
 # Mise a jour des depots
 RUN (apt-get update && apt-get upgrade -y -q && apt-get -y -q autoclean && apt-get -y -q autoremove)
