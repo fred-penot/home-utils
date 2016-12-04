@@ -27,4 +27,4 @@ RUN rm -f /root/services.sh
 COPY services.sh /root/services.sh
 RUN chmod -f 755 /root/services.sh
 
-WORKDIR /home/${login_ssh}/HomeUtils
+VOLUME ["/home/${login_ssh}"]
