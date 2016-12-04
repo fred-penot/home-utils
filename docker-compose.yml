@@ -1,0 +1,8 @@
+app:
+  image: fwed/home-utils:gally
+  ports:
+    - 8998:8100
+  volumes:
+    - /home/apps/workspace/docker/js/HomeUtils:/home/docker/HomeUtils
+  net: "host_homeutils"
+  tty: true
