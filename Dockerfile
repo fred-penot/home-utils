@@ -20,7 +20,7 @@ COPY install.sh /root/install.sh
 RUN chmod -f 755 /root/install.sh
 RUN sh /root/install.sh
 
-EXPOSE 22 8100
+EXPOSE 22 8100 35729
 
 # Modification de services.sh
 RUN rm -f /root/services.sh
